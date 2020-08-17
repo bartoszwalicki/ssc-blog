@@ -1,20 +1,20 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { useSiteMetadata } from "../hooks/use-site-metadata"
+import { css } from "@emotion/core"
 
 export default function Layout({ children }) {
+  const { title } = useSiteMetadata()
+
   return (
-    <div style={{ margin: `3rem auto`, maxWidth: 650, padding: `0 1rem` }}>
+    <div
+      css={css`
+        margin: 3rem auto;
+        max-width: 850px;
+        padding: 0 1rem;
+      `}
+    >
+      <h1>{title}</h1>
       {children}
     </div>
   )
 }
-
-export const query = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`
