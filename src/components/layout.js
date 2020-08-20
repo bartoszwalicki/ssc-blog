@@ -1,20 +1,27 @@
 import React from "react"
-import { useSiteMetadata } from "../hooks/use-site-metadata"
-import { css } from "@emotion/core"
+import styled from "@emotion/styled"
+import SiteHeader from "./site-header";
 
 export default function Layout({ children }) {
-  const { title } = useSiteMetadata()
+
+
+  const Wrapper = styled.div`
+    height: 100vh;
+    background-color: #000;
+  `
+
+  const ColumnWrapper = styled.div`
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  `
 
   return (
-    <div
-      css={css`
-        margin: 3rem auto;
-        max-width: 850px;
-        padding: 0 1rem;
-      `}
-    >
-      <h1>{title}</h1>
-      {children}
-    </div>
+    <Wrapper>
+      <ColumnWrapper>
+        <SiteHeader></SiteHeader>
+        {children}
+      </ColumnWrapper>
+    </Wrapper>
   )
 }
