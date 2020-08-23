@@ -8,12 +8,15 @@ export default function Layout({ children }) {
   const Wrapper = styled.div`
     height: 100vh;
     background-color: #000;
+    overflow: auto;
   `
 
   const ColumnWrapper = styled.div`
-    max-width: 960px;
+    max-width: 990px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
   `
 
   return (
