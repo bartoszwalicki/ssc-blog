@@ -7,7 +7,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `src`,
-        path: `${__dirname}/src/`,
+        path: `${__dirname}/src/pages`,
       },
     },
     `gatsby-transformer-remark`,
@@ -18,5 +18,23 @@ module.exports = {
       },
     },
     `gatsby-plugin-emotion`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 790,
+              quality: 80,
+              backgroundColor: 'transparent',
+              withWebp: true,
+              linkImagesToOriginal: false
+            },
+          },
+        ],
+      },
+    },
   ],
 }

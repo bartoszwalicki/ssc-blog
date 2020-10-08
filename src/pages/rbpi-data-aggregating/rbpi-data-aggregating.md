@@ -26,3 +26,19 @@ I this series of articles we will design and develop network of IoT sensors conn
 - Raspberry Pi version > 3
 - ESP8266 or ESP32
 - BME280 / BMP280 or any other digital sensor, you will find library for everything
+
+## Architecture
+
+### Host
+
+Our Raspberry Pi is a host for all data processing and persistance processes.
+
+![Architecture on rbpi](./architecture_on_rpi.png)
+
+Building blocks contains of Docker containers configured and bounded by docker-compose file.
+
+- MQTT Broker is subscribed to topic that sensors broadcasting their messages (measurments). Messages are formatted in [Line protocol](https://docs.influxdata.com/influxdb/v2.0/reference/syntax/line-protocol/).
+- Telegraf is middle-man that understands Line protocol and knows how to put that data into InfluxDB database.
+- Grafana - visualises the data without hassle.
+
+### Sensors
