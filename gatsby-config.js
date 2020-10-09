@@ -3,6 +3,7 @@ module.exports = {
     title: `SSC Blog`,
   },
   plugins: [
+    `gatsby-plugin-catch-links`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

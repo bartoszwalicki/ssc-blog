@@ -11,7 +11,7 @@ I this series of articles we will design and develop network of IoT sensors conn
 2. MQTT messaging protocol - broker
 3. Telegraf and InfluxDB - persist data with ease
 4. Visualising data with Grafana - see your data
-5. IoT sensor using ESP32 and BME280 - Arduino part
+5. IoT sensor using ESP8266/ESP32 and BME280 - Arduino part
 6. BONUS part - collect temperature using sensor connected to Raspberry Pi, Python script and cron.
 
 ## What is good to know before beginning
@@ -42,3 +42,9 @@ Building blocks contains of Docker containers configured and bounded by docker-c
 - Grafana - visualises the data without hassle.
 
 ### Sensors
+
+Sensor data are sending periodically by ESP8266/ESP32 microcontroller via MQTT protocol to Raspberry Pi through WiFi. 
+
+
+## Next artcile
+In the next article we will get working MQTT Broker on our RPi. [Follow me!](/first-blog-post)
