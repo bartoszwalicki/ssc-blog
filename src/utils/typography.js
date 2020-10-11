@@ -10,6 +10,10 @@ const typography = new Typography({
         html: {
             overflowY: 'initial',
         },
+        a: {
+            color: "#ff5700",
+            textDecoration: "none",
+        },
     }),
 })
 

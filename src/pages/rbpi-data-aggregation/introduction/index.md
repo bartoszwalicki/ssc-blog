@@ -43,8 +43,10 @@ Building blocks contains of Docker containers configured and bounded by docker-c
 
 ### Sensors
 
-Sensor data are sending periodically by ESP8266/ESP32 microcontroller via MQTT protocol to Raspberry Pi through WiFi. 
+Sensor data are sending periodically by ESP8266/ESP32 microcontroller via MQTT protocol to Raspberry Pi through WiFi.
 
+![Architecture on rbpi](./rbpi-and-wireless-devices.png)
 
 ## Next artcile
-In the next article we will get working MQTT Broker on our RPi. [Follow me!](/first-blog-post)
+
+In the [next article](/first-blog-post) we will get working MQTT Broker on our RPi.
