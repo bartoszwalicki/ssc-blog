@@ -7,7 +7,7 @@ export default function Layout({ children }) {
 
   const Wrapper = styled.div`
     height: 100vh;
-    background-color: #000;
+    background-color: rgb(26,29,33,1);
     overflow: auto;
   `
 
