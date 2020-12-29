@@ -23,7 +23,7 @@ I this series of articles we will design and develop network of IoT sensors conn
 
 ## Hardware
 
-- Raspberry Pi version > 3
+- Raspberry Pi version >= 3
 - ESP8266 or ESP32
 - BME280 / BMP280 or any other digital sensor, you will find library for everything
 
@@ -47,6 +47,6 @@ Sensor data are sending periodically by ESP8266/ESP32 microcontroller via MQTT p
 
 ![Architecture on rbpi](./rbpi-and-wireless-devices.png)
 
-## Next artcile
+## What's next?
 
 In the [next article](/first-blog-post) we will get working MQTT Broker on our RPi.
