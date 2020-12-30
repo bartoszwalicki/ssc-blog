@@ -1,5 +1,5 @@
 ---
-title: "Raspberry Pi data aggregation using Docker containers pt.2 - MQTT broker"
+title: "Raspberry Pi data aggregation using Docker containers pt. 2 - MQTT broker"
 date: "2020-09-15"
 ---
 

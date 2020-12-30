@@ -1,8 +1,8 @@
 import React from "react"
-import Layout from "../components/layout"
+import Layout from "../../components/layout"
 import { graphql } from "gatsby"
-import BlogContent from "./blog-content"
-import BlogPostHeader from "./blog-post-header"
+import BlogContent from "./components/blog-content"
+import BlogPostHeader from "./components/blog-post-header"
 
 
 export default function BlogPost({ data }) {

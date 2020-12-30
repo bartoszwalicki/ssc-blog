@@ -1,5 +1,5 @@
 ---
-title: "Raspberry Pi data aggregation using Docker containers - introduction"
+title: "Raspberry Pi data aggregation using Docker containers pt. 1 - introduction"
 date: "2020-09-09"
 ---
 

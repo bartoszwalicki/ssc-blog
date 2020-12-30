@@ -1,5 +1,5 @@
 import styled from "@emotion/styled"
-import { rhythm } from "../utils/typography"
+import { rhythm } from "../../../utils/typography"
 
 const BlogContent = styled.div`
   overflow: auto;

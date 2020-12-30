@@ -7,7 +7,7 @@ import styled from "@emotion/styled"
 
 export default function Home({ data }) {
   const PostExcerptContainer = styled.div`
-    margin-bottom: ${rhythm(1)};
+    margin-bottom: ${rhythm(1.5)};
   `
 
   return (
@@ -22,21 +22,21 @@ export default function Home({ data }) {
                 color: inherit;
               `}
             >
-              <h3
+              <span
+                css={css`
+                    color: #bbb;
+                  `}
+              >
+                {node.frontmatter.date}
+              </span>
+              <h2
                 css={css`
                   margin-bottom: ${rhythm(1 / 4)};
                 `}
               >
                 {node.frontmatter.title}{" "}
-                <span
-                  css={css`
-                    color: #bbb;
-                  `}
-                >
-                  — {node.frontmatter.date}
-                </span>
-              </h3>
-              <p>{node.excerpt}</p>
+              </h2>
+              <p>{node.frontmatter.abstract}</p>
             </Link>
           </PostExcerptContainer>
         ))}
@@ -47,7 +47,7 @@ export default function Home({ data }) {
 
 export const query = graphql`
   query {
-    allMarkdownRemark {
+    allMarkdownRemark (sort: { fields: [frontmatter___date], order: DESC }) {
       totalCount
       edges {
         node {
@@ -55,6 +55,7 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "DD MMMM, YYYY")
+            abstract
           }
           fields {
             slug
