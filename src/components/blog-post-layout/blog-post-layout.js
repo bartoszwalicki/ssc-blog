@@ -1,11 +1,11 @@
 import React from "react"
-import Layout from "../../components/layout"
+import Layout from "../main-layout/main-layout"
 import { graphql } from "gatsby"
 import BlogContent from "./components/blog-content"
 import BlogPostHeader from "./components/blog-post-header"
 
 
-export default function BlogPost({ data }) {
+export default function BlogPostLayout({ data }) {
   const post = data.markdownRemark
 
   return (

@@ -1,16 +1,16 @@
 import React from "react"
 import styled from "@emotion/styled"
-import { useSiteMetadata } from "../hooks/use-site-metadata"
-import { rhythm } from "../utils/typography"
+import { useSiteMetadata } from "../../../../hooks/use-site-metadata"
+import { rhythm } from "../../../../utils/typography"
 import { Link } from "gatsby"
 import { css } from "@emotion/core"
-import logo from "./ssc_logo_tiny.png"
+import logo from "./assets/ssc_logo_tiny.png"
 
 export default function SiteHeader() {
   const { title } = useSiteMetadata()
 
   const SiteHeaderWrapper = styled.div`
-    padding: ${rhythm(1)} 0;
+    padding: ${rhythm(1)} 0 ${rhythm(2)} 0;
   `
 
   const Logo = styled.img`
@@ -21,11 +21,12 @@ export default function SiteHeader() {
     margin-right: ${rhythm(1 / 2)};
   `
 
-  const HeaderText = styled.h1`
+  const HeaderText = styled.span`
     color: #fff;
     border-bottom: none;
     padding: 0;
     margin: 0;
+    font-size: 3rem;
   `
 
   const logoLink = css`

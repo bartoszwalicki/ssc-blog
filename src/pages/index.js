@@ -1,14 +1,18 @@
 import { css } from "@emotion/core"
 import { graphql, Link } from "gatsby"
 import React from "react"
-import Layout from "../components/layout"
+import Layout from "../components/main-layout/main-layout"
 import { rhythm } from "../utils/typography"
 import styled from "@emotion/styled"
 
 export default function Home({ data }) {
-  const PostExcerptContainer = styled.div`
+  const PostExcerptContainer = styled.article`
     margin-bottom: ${rhythm(1.5)};
   `
+
+  const Abstract = styled.p`
+    font-size: 0.9rem;
+  `;
 
   return (
     <Layout>
@@ -22,21 +26,21 @@ export default function Home({ data }) {
                 color: inherit;
               `}
             >
-              <span
+              <time
                 css={css`
                     color: #bbb;
                   `}
               >
                 {node.frontmatter.date}
-              </span>
-              <h2
+              </time>
+              <h1
                 css={css`
                   margin-bottom: ${rhythm(1 / 4)};
                 `}
               >
-                {node.frontmatter.title}{" "}
-              </h2>
-              <p>{node.frontmatter.abstract}</p>
+                {node.frontmatter.title}
+              </h1>
+              <Abstract>{node.frontmatter.abstract}</Abstract>
             </Link>
           </PostExcerptContainer>
         ))}
