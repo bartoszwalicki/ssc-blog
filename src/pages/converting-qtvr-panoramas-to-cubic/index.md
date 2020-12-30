@@ -1,5 +1,5 @@
 ---
-title: "Converting QTVR panoramas to cubic or equirectangular"
+title: "Converting QTVR panoramas to cubic and equirectangular"
 date: "2020-11-19"
 ---
 

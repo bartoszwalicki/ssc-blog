@@ -13,7 +13,6 @@ export default function Home({ data }) {
   return (
     <Layout>
       <div>
-        <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <PostExcerptContainer key={node.id}>
             <Link

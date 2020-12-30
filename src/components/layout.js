@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "@emotion/styled"
 import SiteHeader from "./site-header";
+import Footer from "./footer";
 
 export default function Layout({ children }) {
 
@@ -24,6 +25,7 @@ export default function Layout({ children }) {
       <ColumnWrapper>
         <SiteHeader></SiteHeader>
         {children}
+        <Footer></Footer>
       </ColumnWrapper>
     </Wrapper>
   )
