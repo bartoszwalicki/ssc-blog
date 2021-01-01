@@ -29,9 +29,9 @@ module.exports = {
             options: {
               maxWidth: 790,
               quality: 80,
-              backgroundColor: 'transparent',
+              backgroundColor: "transparent",
               withWebp: true,
-              linkImagesToOriginal: false
+              linkImagesToOriginal: false,
             },
           },
         ],
@@ -41,9 +41,9 @@ module.exports = {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /\.inline\.svg$/
-        }
-      }
-    }
+          include: /\.inline\.svg$/,
+        },
+      },
+    },
   ],
 }

@@ -3,9 +3,9 @@ import { rhythm } from "../../../utils/typography"
 
 const BlogContent = styled.div`
   overflow: auto;
-  
+
   p {
-      text-align: justify;
+    text-align: justify;
   }
 
   pre {

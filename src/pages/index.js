@@ -10,7 +10,7 @@ export default function Home({ data }) {
     margin-bottom: ${rhythm(1.5)};
   `
 
-  const Abstract = styled.p``;
+  const Abstract = styled.p``
 
   return (
     <Layout>
@@ -26,8 +26,8 @@ export default function Home({ data }) {
             >
               <time
                 css={css`
-                    color: #bbb;
-                  `}
+                  color: #bbb;
+                `}
               >
                 {node.frontmatter.date}
               </time>
@@ -49,7 +49,7 @@ export default function Home({ data }) {
 
 export const query = graphql`
   query {
-    allMarkdownRemark (sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       totalCount
       edges {
         node {
