@@ -3,6 +3,7 @@ import Layout from "../main-layout/main-layout"
 import { graphql } from "gatsby"
 import BlogContent from "./components/blog-content"
 import BlogPostHeader from "./components/blog-post-header"
+import CreateGithubIssueCta from "./components/create-github-issue-cta/create-github-issue-cta"
 
 
 export default function BlogPostLayout({ data }) {
@@ -10,10 +11,9 @@ export default function BlogPostLayout({ data }) {
 
   return (
     <Layout>
-      <div>
-        <BlogPostHeader title={post.frontmatter.title} date={post.frontmatter.date} />
-        <BlogContent dangerouslySetInnerHTML={{ __html: post.html }} />
-      </div>
+      <BlogPostHeader title={post.frontmatter.title} date={post.frontmatter.date} />
+      <BlogContent dangerouslySetInnerHTML={{ __html: post.html }} />
+      <CreateGithubIssueCta />
     </Layout>
   )
 }
@@ -24,7 +24,7 @@ export const query = graphql`
       html
       frontmatter {
         title,
-        date
+        date(formatString: "DD MMMM, YYYY")
       }
     }
   }

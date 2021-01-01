@@ -1,5 +1,7 @@
 import React from "react"
+
 import styled from "@emotion/styled"
+
 import { rhythm } from "../../../../utils/typography"
 
 export default function SiteHeader() {
@@ -9,8 +11,6 @@ export default function SiteHeader() {
     text-align: right;
     border-top: 1px dashed rgba(255,255,255,0.4);
     color: rgba(255,255,255,0.4);
-    font-size: 0.8rem;
-    margin-top: ${rhythm(1 / 4)};
     padding: ${rhythm(1 / 2)} 0;
   `
 

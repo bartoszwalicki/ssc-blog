@@ -103,5 +103,5 @@ cubic2erect pano_0.pnm pano_1.pnm pano_2.pnm pano_3.pnm pano_4.pnm pano_5.pnm eq
 
 Both scripts must be run in `/panoramas` directory.
 
-alsaloop -C hw:Extigy -P softvol -r 48000 -f S16_LE -t 50000 -S 1
-sudo alsactl restore
+<!-- alsaloop -C hw:Extigy -P softvol -r 48000 -f S16_LE -t 50000 -S 1
+sudo alsactl restore -->

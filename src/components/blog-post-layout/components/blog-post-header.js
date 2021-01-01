@@ -18,7 +18,7 @@ export default function BlogPostHeader(props) {
     `;
 
     const Date = styled.span`
-        font-size: 0.8rem;
+        font-size: 1rem;
         color: rgba(255,255,255,0.4);
     `;
 

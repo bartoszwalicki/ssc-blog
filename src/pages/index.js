@@ -10,9 +10,7 @@ export default function Home({ data }) {
     margin-bottom: ${rhythm(1.5)};
   `
 
-  const Abstract = styled.p`
-    font-size: 0.9rem;
-  `;
+  const Abstract = styled.p``;
 
   return (
     <Layout>

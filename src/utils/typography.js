@@ -11,8 +11,8 @@ const typography = new Typography({
             overflowY: 'initial',
         },
         a: {
-            color: "#ff5700",
-            textDecoration: "none",
+            color: "#fff",
+            textDecoration: "underline",
         },
     }),
 })
