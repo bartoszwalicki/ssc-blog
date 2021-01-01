@@ -31,7 +31,7 @@ I this series of articles we will design and develop network of IoT sensors conn
 
 ### Host
 
-Our Raspberry Pi is a host for all data processing and persistance processes.
+Our Raspberry Pi is a host for all data processing and persistance.
 
 ![Architecture on rbpi](./architecture_on_rpi.png)
 

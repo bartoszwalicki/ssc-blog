@@ -1,7 +1,5 @@
 import React from "react"
-
 import styled from "@emotion/styled"
-
 import { rhythm } from "../../../../utils/typography"
 
 export default function SiteHeader() {

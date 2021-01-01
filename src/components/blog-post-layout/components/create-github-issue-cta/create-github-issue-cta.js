@@ -27,7 +27,7 @@ export default function CreateGithubIssueCta(props) {
         <a
           target="_blank"
           rel="noreferrer"
-          href={`https://github.com/bartoszwalicki/ssc-blog/tree/master/src/pages/${props.slug}/index.md`}
+          href={`https://github.com/bartoszwalicki/ssc-blog/tree/master/src/pages${props.slug}index.md`}
         >
           Create issue on Github for this page
         </a>{" "}
