@@ -1,6 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `SSC / Blog`,
+    titleTemplate: "%s · SSC / Blog",
+    description: "Tech blog, front-end, back-end and Linux related topics.",
+    url: "https://blog.solidstatecode.com",
+    twitterUsername: "@code_state",
   },
   plugins: [
     `gatsby-plugin-catch-links`,
