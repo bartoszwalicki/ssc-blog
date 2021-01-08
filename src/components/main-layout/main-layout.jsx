@@ -2,6 +2,7 @@ import React from "react"
 import styled from "@emotion/styled"
 import SiteHeader from "./components/site-header/site-header"
 import Footer from "./components/footer/footer"
+import SEO from "../seo/SEO"
 
 export default function Layout({ children }) {
   const Wrapper = styled.div`
@@ -20,6 +21,7 @@ export default function Layout({ children }) {
 
   return (
     <Wrapper>
+      <SEO />
       <ColumnWrapper>
         <SiteHeader></SiteHeader>
         {children}

@@ -1,13 +1,25 @@
+const website = require("./config/website")
+
 module.exports = {
+  pathPrefix: website.pathPrefix,
   siteMetadata: {
-    title: `SSC / Blog`,
-    titleTemplate: "%s · SSC / Blog",
-    description: "Tech blog, front-end, back-end and Linux related topics.",
-    url: "https://blog.solidstatecode.com",
-    twitterUsername: "@code_state",
+    siteUrl: website.url + website.pathPrefix,
+    pathPrefix: website.pathPrefix,
+    title: website.title,
+    titleAlt: website.titleAlt,
+    description: website.description,
+    banner: website.logo,
+    headline: website.headline,
+    siteLanguage: website.siteLanguage,
+    ogLanguage: website.ogLanguage,
+    author: website.author,
+    twitter: website.twitter,
+    facebook: website.facebook,
   },
   plugins: [
     `gatsby-plugin-catch-links`,
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
