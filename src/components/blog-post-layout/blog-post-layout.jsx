@@ -6,7 +6,7 @@ import BlogPostHeader from "./components/blog-post-header"
 import CreateGithubIssueCta from "./components/create-github-issue-cta/create-github-issue-cta"
 import SEO from "../seo/SEO"
 
-export default function BlogPostLayout({ data }, location) {
+export default function BlogPostLayout({ data , location}) {
   const post = data.markdownRemark
 
   return (
@@ -16,7 +16,7 @@ export default function BlogPostLayout({ data }, location) {
         desc={post.frontmatter.abstract}
         pathname={location.pathname}
         article={true}
-        publicationDate={data.publicationDate}
+        publicationDate={post.publicationDate}
       />
       <BlogPostHeader
         title={post.frontmatter.title}
