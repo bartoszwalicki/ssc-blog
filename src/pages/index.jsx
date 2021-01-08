@@ -4,6 +4,7 @@ import React from "react"
 import Layout from "../components/main-layout/main-layout"
 import { rhythm } from "../utils/typography"
 import styled from "@emotion/styled"
+import SEO from "../components/seo/SEO"
 
 export default function Home({ data }) {
   const PostExcerptContainer = styled.article`
@@ -14,6 +15,7 @@ export default function Home({ data }) {
 
   return (
     <Layout>
+      <SEO />
       <div>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <PostExcerptContainer key={node.id}>
