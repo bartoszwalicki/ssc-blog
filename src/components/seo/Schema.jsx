@@ -131,7 +131,7 @@ const Schema = ({ title, desc, image, url, article, publicationDate }) => {
     <>
       <Helmet title={title}>
         <html lang={siteLanguage} />
-        <meta name="description" content={descr} />
+        <meta name="description" content={desc} />
         <meta name="image" content={image} />
         {!article && (
           <script type="application/ld+json">

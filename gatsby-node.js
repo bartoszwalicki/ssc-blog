@@ -33,7 +33,7 @@ exports.createPages = async ({ graphql, actions }) => {
     createPage({
       path: node.fields.slug,
       component: path.resolve(
-        `./src/components/blog-post-layout/blog-post-layout.js`
+        `./src/components/blog-post-layout/blog-post-layout.jsx`
       ),
       context: {
         slug: node.fields.slug,

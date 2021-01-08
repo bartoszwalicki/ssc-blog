@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import BlogContent from "./components/blog-content"
 import BlogPostHeader from "./components/blog-post-header"
 import CreateGithubIssueCta from "./components/create-github-issue-cta/create-github-issue-cta"
-import SEO from "../seo/seo"
+import SEO from "../seo/SEO"
 
 export default function BlogPostLayout({ data }, location) {
   const post = data.markdownRemark

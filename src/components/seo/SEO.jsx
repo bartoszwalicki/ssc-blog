@@ -72,7 +72,7 @@ SEO.defaultProps = {
   desc: null,
   banner: null,
   pathname: null,
-  article: true,
+  article: false,
   publicationDate: null,
 }
 
