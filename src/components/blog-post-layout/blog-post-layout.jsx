@@ -16,7 +16,7 @@ export default function BlogPostLayout({ data , location}) {
         desc={post.frontmatter.abstract}
         pathname={location.pathname}
         article={true}
-        publicationDate={post.publicationDate}
+        publicationDate={post.frontmatter.publicationDate}
       />
       <BlogPostHeader
         title={post.frontmatter.title}
