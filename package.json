@@ -1,7 +1,10 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "ssc-blog",
+  "author": {
+    "name": "Bartosz Walicki"
+  },
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Solid State Code Blog",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
@@ -21,6 +24,7 @@
     "gatsby-plugin-emotion": "^4.5.0",
     "gatsby-plugin-react-helmet": "^3.8.0",
     "gatsby-plugin-react-svg": "^3.0.0",
+    "gatsby-plugin-robots-txt": "^1.5.5",
     "gatsby-plugin-sharp": "^2.12.0",
     "gatsby-plugin-sitemap": "^2.10.0",
     "gatsby-plugin-typography": "^2.10.0",

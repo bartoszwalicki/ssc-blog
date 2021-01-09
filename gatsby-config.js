@@ -27,6 +27,14 @@ module.exports = {
         path: `${__dirname}/src/pages`,
       },
     },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://blog.solidstatecode.com",
+        sitemap: "https://blog.solidstatecode.com/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
+      },
+    },
     `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-typography`,
