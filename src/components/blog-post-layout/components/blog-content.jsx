@@ -9,9 +9,10 @@ const BlogContent = styled.div`
   }
 
   pre {
-    background-color: rgb(210, 210, 210);
+    background-color: rgb(224, 224, 224);
     padding: ${rhythm(1 / 2)};
     border-radius: 5px;
+    overflow: scroll;
 
     code {
       color: rgb(26, 29, 33, 1);

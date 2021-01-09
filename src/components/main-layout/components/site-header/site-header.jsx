@@ -14,7 +14,7 @@ export default function SiteHeader() {
   `
 
   const Logo = styled.img`
-    width: 40px;
+    width: 50px;
     border-radius: 100%;
     margin: 0;
     padding: 0;
@@ -22,6 +22,7 @@ export default function SiteHeader() {
   `
 
   const HeaderText = styled.span`
+    text-align: center;
     color: #fff;
     border-bottom: none;
     padding: 0;

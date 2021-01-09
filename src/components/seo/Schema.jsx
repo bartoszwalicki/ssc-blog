@@ -55,8 +55,6 @@ const Schema = ({ title, desc, image, url, article, publicationDate }) => {
     },
   }
 
-  // Initial breadcrumb list
-
   const itemListElement = [
     {
       "@type": "ListItem",
@@ -100,7 +98,7 @@ const Schema = ({ title, desc, image, url, article, publicationDate }) => {
       description: desc,
       headline: title,
       inLanguage: siteLanguage,
-      url: url,
+      url,
       name: title,
       image: {
         "@type": "ImageObject",

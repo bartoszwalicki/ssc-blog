@@ -1,11 +1,13 @@
 import React from "react"
+import "normalize.css"
 import styled from "@emotion/styled"
 import SiteHeader from "./components/site-header/site-header"
 import Footer from "./components/footer/footer"
 
+
 export default function Layout({ children }) {
   const Wrapper = styled.div`
-    height: 100vh;
+    min-height: 100vh;
     background-color: rgb(26, 29, 33, 1);
     overflow: auto;
   `
