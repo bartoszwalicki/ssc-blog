@@ -35,6 +35,7 @@ export default function Home({ data }) {
               </time>
               <h1
                 css={css`
+                  margin-top: ${rhythm(1 / 4)};
                   margin-bottom: ${rhythm(1 / 4)};
                 `}
               >
