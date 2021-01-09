@@ -12,7 +12,7 @@ const BlogContent = styled.div`
     background-color: rgb(224, 224, 224);
     padding: ${rhythm(1 / 2)};
     border-radius: 5px;
-    overflow: scroll;
+    overflow: auto;
 
     code {
       color: rgb(26, 29, 33, 1);
