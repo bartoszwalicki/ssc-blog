@@ -17,6 +17,7 @@ export default function BlogPostLayout({ data , location}) {
         pathname={location.pathname}
         article={true}
         publicationDate={post.frontmatter.publicationDate}
+        updatedDate={post.frontmatter.updatedDate}
       />
       <BlogPostHeader
         title={post.frontmatter.title}
@@ -39,6 +40,7 @@ export const query = graphql`
         title
         date(formatString: "DD MMMM, YYYY")
         publicationDate: date(formatString: "YYYY-MM-DD")
+        updatedDate(formatString: "YYYY-MM-DD")
         abstract
       }
     }

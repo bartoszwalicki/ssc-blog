@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-const Schema = ({ title, desc, image, url, article, publicationDate }) => {
+const Schema = ({ title, desc, image, url, article, publicationDate, updatedDate }) => {
   const { site } = useStaticQuery(query)
 
   const {
@@ -94,7 +94,7 @@ const Schema = ({ title, desc, image, url, article, publicationDate }) => {
         },
       },
       datePublished: publicationDate,
-      dateModified: publicationDate,
+      dateModified: updatedDate,
       description: desc,
       headline: title,
       inLanguage: siteLanguage,

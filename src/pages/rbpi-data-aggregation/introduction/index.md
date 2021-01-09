@@ -1,6 +1,7 @@
 ---
 title: "Raspberry Pi data aggregation using Docker containers pt. 1 - introduction"
 date: "2020-09-09"
+updatedDate: "2020-11-19"
 ---
 
 I this series of articles we will design and develop network of IoT sensors connected to the main hub running on Raspberry Pi. Data will be collected on InfluxDB time series database and visualised by Grafana. We will also host MQTT broker and use Telegraf as middle-man between MQTT messages and writing data to InfluxDB. All system blocks will be dockerized.

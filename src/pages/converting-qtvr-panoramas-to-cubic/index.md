@@ -1,6 +1,7 @@
 ---
 title: "Converting QTVR panoramas to cubic and equirectangular"
 date: "2020-11-19"
+updatedDate: "2021-01-19"
 abstract: "Get rid of legacy VR format and gain some Docker skills!"
 ---
 

@@ -5,7 +5,7 @@ import Facebook from "./Facebook"
 import Twitter from "./Twitter"
 import Schema from "./Schema"
 
-const SEO = ({ title, desc, banner, pathname, article, publicationDate }) => {
+const SEO = ({ title, desc, banner, pathname, article, publicationDate, updatedDate }) => {
   const { site } = useStaticQuery(query)
 
   const {
@@ -36,6 +36,7 @@ const SEO = ({ title, desc, banner, pathname, article, publicationDate }) => {
         url={seo.url}
         article={article}
         publicationDate={publicationDate}
+        updatedDate={updatedDate}
       />
       <Facebook
         desc={seo.description}
@@ -65,6 +66,7 @@ SEO.propTypes = {
   pathname: PropTypes.string,
   article: PropTypes.bool,
   publicationDate: PropTypes.string,
+  updatedDate: PropTypes.string
 }
 
 SEO.defaultProps = {
@@ -74,6 +76,7 @@ SEO.defaultProps = {
   pathname: null,
   article: false,
   publicationDate: null,
+  updatedDate: null
 }
 
 const query = graphql`
