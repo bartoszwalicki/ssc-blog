@@ -1,7 +1,7 @@
 ---
 title: "Basic cURL HTTP commands"
-date: "2020-11-19"
-updatedDate: "2020-11-19"
+date: "2020-10-01"
+updatedDate: "2020-10-01"
 abstract: "GET, POST, PUT, PATCH with headers and JSON data. Quick one."
 ---
 

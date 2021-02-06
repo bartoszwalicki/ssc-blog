@@ -1,7 +1,7 @@
 ---
 title: "Remote control with Raspberry Pi and ir-keytable"
 date: "2021-01-09"
-updatedDate: "2021-01-09"
+updatedDate: "2021-02-06"
 abstract: "Using generic IR receiver, ir-keytable, mpd + mpc and triggerhappy."
 ---
 
@@ -155,24 +155,9 @@ Triple J
 
 After executing `mpc play 1` you should hear first radiostation in playlist. Stop it with `mpc stop`.
 
-## triggerhappy - create action on media command
+## triggerhappy - create action on remote command
 
-Firstly, there is a bug in triggerhappy causing that commands are not executed with proper user. In my release:
-
-```
-PRETTY_NAME="Raspbian GNU/Linux 10 (buster)"
-NAME="Raspbian GNU/Linux"
-VERSION_ID="10"
-VERSION="10 (buster)"
-VERSION_CODENAME=buster
-ID=raspbian
-ID_LIKE=debian
-HOME_URL="http://www.raspbian.org/"
-SUPPORT_URL="http://www.raspbian.org/RaspbianForums"
-BUG_REPORT_URL="http://www.raspbian.org/RaspbianBugs"
-```
-
-it was not fixed. I created a [PR with solution at project Github](https://github.com/wertarbyte/triggerhappy/pull/30), maybe it will be merged someday. Until that you have to fix it yourself.
+Firstly, there is a bug in triggerhappy causing that commands are not executed with proper user. In my Rapsbian 10 release it was not fixed. I created a [PR with solution at project on Github](https://github.com/wertarbyte/triggerhappy/pull/30), maybe it will be merged someday. Until that you have to fix it yourself.
 
 Edit `triggerhappy.service` file:
 
@@ -196,7 +181,7 @@ WantedBy=multi-user.target
 ```
 
 _Disclaimer_
-_I am aware that running services as root is not recommended and I should not do this in production environment. However, RPi is running in local environment whithout acces to outer world, so I should be safe._
+_I am aware that running services as root is not recommended and I should not do this in production environment. However, mine RPi is running in local environment whithout acces to outer world, so I should be safe._
 
 Set user for service:
 
@@ -248,7 +233,7 @@ KEY_VOLUMEDOWN	2		/usr/bin/amixer set Master 1%- > /dev/null
 KEY_EXIT	1		mpc stop
 ```
 
-Restart triggerhappy `sudo systemctl restart triggerhappy` and enjoy your remote control Rpi!
+Restart triggerhappy: `sudo systemctl restart triggerhappy` and enjoy your remote control Rpi!
 
 ## Resources
 
