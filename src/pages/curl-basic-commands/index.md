@@ -36,7 +36,7 @@ curl 'https://example.com/posts?userId=1'
           'https://example.com/posts'
 ```
 
-Most common mistake in this type of query is forcing `cURL` to change request type by `-X POST` or `--request POST`. `cURL` don't need this for POST, it will invoke POST method thanks to `--data` parameter.
+The most common mistake in this type of query is forcing `cURL` to change request type by `-X POST` or `--request POST`. `cURL` don't need this for POST, it will invoke POST method thanks to `--data` parameter.
 
 JSON placed in `--data` parameter must be stringified. There are a lot of tools to stringify JSON online, like [JSON Stringify Online Tool](http://rantz.net/tools/stringify/index.php).
 
