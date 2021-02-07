@@ -1,11 +1,11 @@
 ---
 title: "Basic cURL HTTP commands"
 date: "2020-10-01"
-updatedDate: "2020-10-01"
+updatedDate: "2021-02-07"
 abstract: "GET, POST, PUT, PATCH with headers and JSON data. Quick one."
 ---
 
-[cURL](https://curl.se/) is versatile URL request tool that is vastly used among web developers, every one should know at least basics. If you have any problems with endpoint provided by backend it is best to provide in bug ticket cURL request that is failing. You don't argue with cURL.
+[cURL](https://curl.se/) is versatile URL request tool that is vastly used among web developers, everyone should know at least basics. If you have any problems with endpoint provided by backend it is best to provide in bug ticket cURL request that is failing. You don't argue with cURL.
 
 ## GET
 
