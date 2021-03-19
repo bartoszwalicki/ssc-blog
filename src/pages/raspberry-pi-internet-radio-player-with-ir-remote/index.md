@@ -111,7 +111,7 @@ https://stream4.nadaje.com:8625/mcradio
 #EXTINF:-1, Antyradio
 http://ant-kat-01.cdn.eurozet.pl:8604/
 
-#EXTINF:-1, Melodario
+#EXTINF:-1, Meloradio
 https://ml.cdn.eurozet.pl/mel-net.mp3
 
 #EXTINF:-1, Afera
