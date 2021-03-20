@@ -9,11 +9,23 @@ Linux edition of DaVinci Resolve is not able to edit h265 videos, probably some 
 
 ## Command
 
-```
+```bash
 ffmpeg -i vacation.mp4 -c:v prores_ks -profile:v 3 -qscale:v 9 -c:a pcm_s16le vacation.mov
 ```
 
 where `-i INPUT_FILE_NAME.mp4` is input and at the end `OUTPUT_FILE_NAME.mov` is output. After converting DaVinci accepts video without any hassle.
+
+## Automate
+
+Bash script for converting all `*.mp4` files to ProRes in `.mov` container.
+
+```bash
+#!/bin/bash
+for file in *.mp4; do
+    filename="${file%.*}"
+    ffmpeg -i $file -c:v prores_ks -profile:v 3 -qscale:v 9 -c:a pcm_s16le $filename.mov;
+done
+```
 
 ## Resources
 
